@@ -24,10 +24,10 @@ const Testimonials = () => {
       <h1 className='text-center font-medium text-4xl'>Testimonials</h1>
       <div className='flex overflow-x-scroll lg:overflow-auto no-scrollbar justify-between p-8 gap-32 mt-16'>
         {testimonials.map((item, index) => (
-          <div key={index} className='flex flex-col min-w-full gap-4 items-center'>
+          <div key={index} className='flex flex-col min-w-full lg:min-w-min  gap-4 items-center'>
             <img src={item.img} alt='' />
             <h1 className='border-b-green-300 border-b-2 pb-4'>{item.name}</h1>
-            <p>
+            <p className='text-center'>
               It is a long established fact that a reader will be distracted by the readable content
               of a page when looking at its layout.
             </p>
